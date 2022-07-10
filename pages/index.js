@@ -19,7 +19,7 @@ export default function Home({title, description}) {
     const name = await contractInstance.name()
     setCommunity(name);
     const asevenexBokiURI = await contractInstance.tokenURI(4715);
-    const asvenexBokiData = await fetch(asevenexBokiURI).then(result => console.log(result));
+    const asevenexBokiData = await fetch(asevenexBokiURI).then(result => console.log(result));
     // console.log(asevenexBoki);
     setBokiImg(asevenexBoki)
   }
